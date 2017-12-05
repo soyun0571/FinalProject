@@ -1,0 +1,55 @@
+extends layout
+
+block hero-unit
+  #carouselFade.carousel.slide.carousel-fade(data-ride='carousel', data-interval='2000')
+    .carousel-inner(role='listbox')
+        .carousel-item.active
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/35d88f/django/images/home/banners/homepage_hero_banner_1.jpg', height='410px', alt='First slide')
+        .carousel-item
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/aa36c3/django/images/home/banners/homepage_hero_banner_2.jpg', height='410px', alt='Second slide')
+        .carousel-item
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/6812b9/django/images/home/banners/homepage_hero_banner_3.jpg', height='410px', alt='Third slide')
+        .carousel-item
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/99ca9f/django/images/home/banners/homepage_hero_banner_4.jpg', height='410px', alt='Fourth slide')
+      
+block content
+  .container
+    .row
+    <div class="col-12">
+    <div class="item active">
+    <div class="carousel-caption">
+    <nav class="navbar navbar-light bg-light justify-content-center">
+    h2 Find your next experience
+    <form class="form-inline">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search events or categories" aria-label="Search">
+    <input class="form-control mr-sm-2" type="text" placeholder="Enter city or location" aria-label="Search">
+    
+    <div class="hide-small g-cell--no-gutters search-dropdown search-bar-component">
+      <select id="consumer-header-date-range" name="date" class="js-d-select-box" role="listbox">
+        <option value="">All Dates</option>
+        <option value="today">Today</option>
+        <option value="tomorrow">Tomorrow</option>
+        <option value="this_week">This Week</option>
+        <option value="this_weekend">This Weekend</option>
+        <option value="next_week">Next Week</option>
+        <option value="next_month">Next Month</option>
+      </select>            
+                
+    <button class="btn btn-outline-success my-2 my-sm-0" input type="submit">Search</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+      .col-md-6
+        h3 서비스 목적
+        p 본 서비스는 웹프로그래밍 수업을 위해서 sample로 만들어보는 것입니다. 
+      .col-md-6
+        h3 주요 기능
+        ul
+          li 질문글 등록/보기/변경/삭제
+          li 답변글 등록/삭제
+          li 사용자 관리/인증
+          li API
+
