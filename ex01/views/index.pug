@@ -1,0 +1,265 @@
+extends layout
+
+block hero-unit
+  #carouselFade.carousel.slide.carousel-fade(data-ride='carousel', data-interval='2000')
+    .carousel-inner(role='listbox')
+        .carousel-item.active
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/35d88f/django/images/home/banners/homepage_hero_banner_1.jpg', height='410px', alt='First slide')
+        .carousel-item
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/aa36c3/django/images/home/banners/homepage_hero_banner_2.jpg', height='410px', alt='Second slide')
+        .carousel-item
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/6812b9/django/images/home/banners/homepage_hero_banner_3.jpg', height='410px', alt='Third slide')
+        .carousel-item
+          img.d-block.w-100(src='https://cdn.evbstatic.com/s3-build/perm_001/99ca9f/django/images/home/banners/homepage_hero_banner_4.jpg', height='410px', alt='Fourth slide')
+
+block card
+  .container
+    .row
+    <div class="col-12">
+    <div class="item active">
+    <div class="carousel-caption">
+    <nav class="navbar navbar-light bg-light justify-content-center">
+    h2 Find your next experience
+    <form class="form-inline">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search events or categories" aria-label="Search">
+    <input class="form-control mr-sm-2" type="text" placeholder="Enter city or location" aria-label="Search">
+
+    <div class="hide-small g-cell--no-gutters search-dropdown search-bar-component">
+      <select id="consumer-header-date-range" name="date" class="js-d-select-box" role="listbox">
+        <option value="">All Dates</option>
+        <option value="today">Today</option>
+        <option value="tomorrow">Tomorrow</option>
+        <option value="this_week">This Week</option>
+        <option value="this_weekend">This Weekend</option>
+        <option value="next_week">Next Week</option>
+        <option value="next_month">Next Month</option>
+      </select>            
+                
+    <button class="btn btn-outline-success my-2 my-sm-0" input type="submit">Search</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F36353019%2F227861081994%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C0%2C1800%2C900&s=5f2b83d86a3309f7fd94f31b4591641a" alt="Card image cap">
+        <div class="card-body">
+        <p class="card-text">FRI.OCT 20 6:00 PM</p>
+        <p class="card-text">StartupToken Asia Tour 2017 - Seoul Edition</p>
+        <p class="card-text">MARUI80.Gangnam-gu</p>
+        <div class="dropdown-divider"></div>
+        <button type="button" class="btn btn-link">#Science Tech</button>
+        <button type="button" class="btn btn-link">#Seminar</button>
+        </div>
+      </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F34893292%2F201289144405%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C49%2C1082%2C541&s=267304f3b7554534889e1c3983b9d4a6" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">WED. DEC 20 6:00 PM</p>
+          <p class="card-text">Innovations in AgTech (Seoul)</p>
+          <p class="card-text">WeWork Euljiro. Seoul</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Conference</button>
+      </div>
+            </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F36457873%2F30310122989%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C36%2C702%2C351&s=9edf2d7fa45cc7def36a4c34fe01f1ab" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">SUN. OCT 15 3:30 PM</p>
+          <p class="card-text">Seoul Smart Contract and Blockchain Disruptors - DGCAMP - 15 October 2017...</p>
+          <p class="card-text">396. Gangnam-daero. Gangnam-gu.. Seoul</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Networking</button>
+      </div>
+            </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F36346708%2F59307985005%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C33%2C266%2C133&s=4649e5f492199c0bb8e436ae15cd99bd" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">MON. OCT 30 11:00 AM</p>
+          <p class="card-text">Seoul Big Data Training | Hadoop Training - Omni212</p>
+          <p class="card-text">Instructor Ied Online | Video Conference. Seoul</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Class</button>
+      </div>
+            </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F34331050%2F113026609461%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C30%2C368%2C184&s=54cd6bcd25aa705d8c8a31b5892cfd0f" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">SUM. OCT 15 11:30PM</p>
+          <p class="card-text">Premium Training Program - Big Data With Hadoop & Spark Certification - Liv...</p>
+          <p class="card-text">Seoul</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Class</button>
+      </div>
+            </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F34444384%2F113026609461%2F1%2Foriginal.jpg?h=230&w=460&rect=46%2C0%2C386%2C193&s=3eecb85e63ae8d84c9f6ae55f606d8e8" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">SUM. OCT 15 11:30PM</p>
+          <p class="card-text">Big Data With Hadoop & Spark Certification Training Bootcamp - Live...</p>
+          <p class="card-text">Seoul</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Class</button>
+      </div>
+            </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35881929%2F165073140627%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C0%2C1372%2C686&s=1d4ecdcca84db1bb3cbf6aa3a1e9fc8a" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">THU. OCT 19 10:00 AM</p>
+          <p class="card-text">Google Cloud Platform Fundamentals: Core Infrastructure</p>
+          <p class="card-text">구글 코리아. 서울</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Class</button>
+      </div>
+            </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35881929%2F165073140627%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C0%2C1372%2C686&s=1d4ecdcca84db1bb3cbf6aa3a1e9fc8a" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">THU. OCT 19 10:00 AM</p>
+          <p class="card-text">Google Cloud Platform Fundamentals: Core Infrastructure</p>
+          <p class="card-text">구글 코리아. 서울</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Class</button>
+      </div>
+            </div>
+      <div class="card" style="max-width: 20rem;">
+        <img class="card-img-top" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35881929%2F165073140627%2F1%2Foriginal.jpg?h=230&w=460&rect=0%2C0%2C1372%2C686&s=1d4ecdcca84db1bb3cbf6aa3a1e9fc8a" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">THU. OCT 19 10:00 AM</p>
+          <p class="card-text">Google Cloud Platform Fundamentals: Core Infrastructure</p>
+          <p class="card-text">구글 코리아. 서울</p>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-link">#Science Tech</button>
+          <button type="button" class="btn btn-link">#Class</button>
+      </div>
+            </div>
+block seemore
+    <div class="seemore">
+    <button type="button" class="btn btn-primary">SEE MORE</button>
+    <h3>Browse by Top Categories</h3>
+    </div>
+block gallery
+      <img src="music.jpg" alt="music" height="230" id="img_1">
+block finalmenu_1
+  .container
+    .row
+      .col-sm-3
+        <h4>Use Eventbrite</h4>
+        <p>How it Works</p>
+        <p>For Large & Complex Events</p>
+        <p>Pricing</p>
+        <p>Community Guidelines</p>
+        <p>Eventbrite Mobile App</p>
+        <p>Eventbrite Check-in App</p>
+        <p>Eventbrite Spectrum</p>
+        <p>Rally - Fun Things To Do</p>
+        <p>Event Organizing Resources</p>
+        <p>Sitemap</p>
+      .col-sm-3
+        <h4>Plan Events</h4>
+        <p>Conference Management Software</p>
+        <p>Reunions</p>
+        <p>Nonprofits & Fundraisers</p>
+        <p>Eventbrite Reviews</p>
+        <p>Sell Tickets</p>
+        <p>Event Management & Planning</p>
+        <p>Online Event Registration</p>
+        <p>Online RSVP</p>
+        <p>Venue Booking & Management</p>
+        <p>Event Promotion</p>
+      .col-sm-3
+        <h4>Find Events</h4>
+        <p>Boston Events</p>
+        <p>Chicago Events</p>
+        <p>Denver Events</p>
+        <p>Houston Events</p>
+        <p>Los Angeles Events</p>
+        <p>Nashville Events</p>
+        <p>New York Events</p>
+        <p>San Diego Events</p>
+        <p>San Francisco Events</p>
+        <p>All Cities</p>
+      .col-sm-3
+        <h4>Connect With Us</h4>
+        <p>Contact Support</p>
+        <p>Contact Sales</p>
+        <p>Twitter</p>
+        <p>Facebook</p>
+        <p>Linkedin</p>
+        <p>Instagram</p>
+        <p>Google+</p>
+block finalhr_1
+  <hr>
+block final_1
+  <h4>Country</h4>
+  <button type="button" class="btn btn-link">Argentina</button>
+  <button type="button" class="btn btn-link">Australia</button>
+  <button type="button" class="btn btn-link">Brasil</button>
+  <button type="button" class="btn btn-link">Canada(EN)</button>
+  <button type="button" class="btn btn-link">Canada(FR)</button>
+  <button type="button" class="btn btn-link">Chile</button>
+  <button type="button" class="btn btn-link">Colombia</button>
+  <button type="button" class="btn btn-link">Deutschland</button>
+  <button type="button" class="btn btn-link">Espana</button>
+  <button type="button" class="btn btn-link">France</button>
+  <button type="button" class="btn btn-link">Hong kong</button>
+  <button type="button" class="btn btn-link">Ireland</button>
+  <button type="button" class="btn btn-link">Italia</button>
+  <button type="button" class="btn btn-link">Mexico</button>
+  <button type="button" class="btn btn-link">Nederland</button>
+  <button type="button" class="btn btn-link">New Zealand</button>
+  <button type="button" class="btn btn-link">Peru</button>
+  <button type="button" class="btn btn-link">Portugal</button>
+  <button type="button" class="btn btn-link">Singapore</button>
+  <button type="button" class="btn btn-link">United Kingdom</button>
+  <button type="button" class="btn btn-link">United States</button>
+block finalhr_2
+  <hr>
+block final_2
+  <button type="button" class="btn btn-link">About</button>
+  <button type="button" class="btn btn-link">Blog</button>
+  <button type="button" class="btn btn-link">Help</button>
+  <button type="button" class="btn btn-link">Careers</button>
+  <button type="button" class="btn btn-link">Press</button>
+  <button type="button" class="btn btn-link">Security</button>
+  <button type="button" class="btn btn-link">Developers</button>
+  <button type="button" class="btn btn-link">Terms</button>
+  <button type="button" class="btn btn-link">Privacy</button>
+  <button type="button" class="btn btn-link">Cookies</button>
+block finalbutton
+  <button  type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+  United States</button>
+  <div class="dropdown-menu">
+  <a class="dropdown-item" href="#">Argentina</a>
+  <a class="dropdown-item" href="#">Australia</a>
+  <a class="dropdown-item" href="#">Brasil</a>
+  <a class="dropdown-item" href="#">Canada(EN)</a>
+  <a class="dropdown-item" href="#">Canada(FR)</a>
+  <a class="dropdown-item" href="#">Chile</a>
+  <a class="dropdown-item" href="#">Colombia</a>
+  <a class="dropdown-item" href="#">Deutschland</a>
+  <a class="dropdown-item" href="#">Espana</a>
+  <a class="dropdown-item" href="#">France</a>
+  <a class="dropdown-item" href="#">Hong kong</a>
+  <a class="dropdown-item" href="#">Ireland</a>
+  <a class="dropdown-item" href="#">Italia</a>
+  <a class="dropdown-item" href="#">Mexico</a>
+  <a class="dropdown-item" href="#">Nederland</a>
+  <a class="dropdown-item" href="#">New Zealand</a>
+  <a class="dropdown-item" href="#">Peru</a>
+  <a class="dropdown-item" href="#">Portugal</a>
+  <a class="dropdown-item" href="#">Singapore</a>
+  <a class="dropdown-item" href="#">United Kingdom</a>
+  <a class="dropdown-item" href="#">United States</a>
+block finalhr_3
+  <hr>
+block finaltext
+  <h3>© 2017 Eventbrite</h3>
