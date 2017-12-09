@@ -1,0 +1,50 @@
+.form-group
+  label(for="title") Event name
+  input.form-control(type="text", name="title", placeholder="What's your event name?", value=event.title)
+.form-group
+  label(for="title") Place
+  input.form-control(type="text", name="title", placeholder="What's your event place?", value=event.title)
+.form-group
+  label(for="event") Time
+  input.form-control(type="text", name="content", placeholder="When your event start?", value=event.content)
+  input.form-control(type="text", name="content", placeholder="When your event finish?", value=event.content)
+.form-group
+  label(for="title") Event Category
+<div class="category">
+    <select class="form-control mr-sm-2" role="listbox" placeholder="category" value=event.content>
+        <option value="">Business</option>
+        <option value="science&tech">Science & Tech</option>
+        <option value="other">Other</option>
+        <option value="health">Health</option>
+        <option value="family&education">Family & Education</option>
+        <option value="food&drink">Food & Drink</option>
+        <option value="hoilday">Holiday</option>
+        <option value="home&lifestyle">Home & Lifestyle</option>
+    </select>
+</div>
+.form-group
+label(for="title") Event Type
+<div class="category">
+    <select class="form-control mr-sm-2" role="listbox" placeholder="type" value=event.content>
+        <option value="">Class</option>
+        <option value="conference">Conference</option>
+        <option value="festival">Festival</option>
+        <option value="networking">Networking</option>
+        <option value="seminar">Seminar</option>
+        <option value="party">Party</option>
+        <option value="other">Other</option>
+        <option value="screening">Screening</option>
+    </select>
+</div>
+.form-group
+  label(for="event") Event content
+  textarea.form-control(name="content", placeholder="Content", rows="5")= event.content
+.form-group
+  label(for="event") Organization name
+  input.form-control(type="text", name="content", placeholder="What's your organization name?", value=event.content)
+.form-group
+  label(for="event") Organization information
+  input.form-control(type="text", name="content", placeholder="What's your organization information?", value=event.content)
+.form-group
+  label(for="tags") Tags
+  input.form-control(type="text", name="tags", placeholder="tags separated by spaces", value=event.tags ? event.tags.join(" ") : "")
